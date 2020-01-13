@@ -1,5 +1,6 @@
 package p70_2
 
+// AC
 func ClimbStairs(n int) int {
 	if n < 0 {
 		return 0

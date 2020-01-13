@@ -1,5 +1,6 @@
 package p70_1
 
+// 大量递归与重复计算
 // Deprecated: Timeout
 func ClimbStairs(n int) int {
 	if n <= 0 {

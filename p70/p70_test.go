@@ -1,7 +1,8 @@
 package p70
 
 import (
-	use "goleetcode/p70/p70_2"
+	"goleetcode/p70/p70_1"
+	"goleetcode/p70/p70_2"
 	"testing"
 )
 
@@ -14,17 +15,25 @@ var tests = []struct {
 	args args
 	want int
 }{
-	{"sample", args{2}, 2},
-	{"sample", args{3}, 3},
-	{"custom", args{4}, 5},
-	{"custom", args{10}, 89},
-	{"custom", args{44}, 1134903170},
+	{"sample-0", args{2}, 2},
+	{"sample-1", args{3}, 3},
+	{"custom-0", args{4}, 5},
+	{"custom-1", args{10}, 89},
+	{"custom-2", args{44}, 1134903170},
 }
 
-func Test_climbStairs1(t *testing.T) {
+func Test_1(t *testing.T) {
+	testClimbStairs(t, p70_1.ClimbStairs)
+}
+
+func Test_2(t *testing.T) {
+	testClimbStairs(t, p70_2.ClimbStairs)
+}
+
+func testClimbStairs(t *testing.T, f func(int) int) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := use.ClimbStairs(tt.args.n); got != tt.want {
+			if got := f(tt.args.n); got != tt.want {
 				t.Errorf("climbStairs() = %v, want %v", got, tt.want)
 			}
 		})
