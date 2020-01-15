@@ -1,8 +1,8 @@
 package p448
 
 import (
-	"goleetcode/p448/p448_1"
-	"goleetcode/p448/p448_2"
+	"github.com/TeslaCN/goleetcode/p448/p448_1"
+	"github.com/TeslaCN/goleetcode/p448/p448_2"
 	"reflect"
 	"testing"
 )
