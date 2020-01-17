@@ -20,6 +20,21 @@ func CreateLinkedList(values []int) *ListNode {
 	return headNode
 }
 
+func CreateLinkedListInArray(values []int) []*ListNode {
+	if values == nil || len(values) < 1 {
+		return nil
+	}
+	var nodes = make([]*ListNode, len(values))
+	nodes[0] = &ListNode{values[0], nil}
+	p := nodes[0]
+	for i := 1; i < len(values); i++ {
+		p.Next = &ListNode{values[i], nil}
+		nodes[i] = p.Next
+		p = p.Next
+	}
+	return nodes
+}
+
 func AppendLinkedList(head, appendixHead *ListNode) *ListNode {
 	if head == nil || appendixHead == nil {
 		return head
