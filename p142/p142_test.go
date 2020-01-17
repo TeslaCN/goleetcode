@@ -3,6 +3,7 @@ package p142
 import (
 	"github.com/TeslaCN/goleetcode/p142/p142_1"
 	"github.com/TeslaCN/goleetcode/p142/p142_2"
+	"github.com/TeslaCN/goleetcode/p142/p142_3"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"
@@ -60,6 +61,10 @@ func Test_1(t *testing.T) {
 
 func Test_2(t *testing.T) {
 	testDetectCycle(t, p142_2.DetectCycle)
+}
+
+func Test_3(t *testing.T) {
+	testDetectCycle(t, p142_3.DetectCycle)
 }
 
 func testDetectCycle(t *testing.T, f func(*ListNode) *ListNode) {
