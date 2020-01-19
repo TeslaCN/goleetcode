@@ -1,9 +1,9 @@
 package p142
 
 import (
-	"github.com/TeslaCN/goleetcode/p142/p142_1"
-	"github.com/TeslaCN/goleetcode/p142/p142_2"
-	"github.com/TeslaCN/goleetcode/p142/p142_3"
+	"github.com/TeslaCN/goleetcode/leetcode/p142/p142_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p142/p142_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p142/p142_3"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"

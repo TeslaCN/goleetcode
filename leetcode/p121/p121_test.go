@@ -1,8 +1,8 @@
 package p121
 
 import (
-	"github.com/TeslaCN/goleetcode/p121/p121_1"
-	"github.com/TeslaCN/goleetcode/p121/p121_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p121/p121_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p121/p121_2"
 	"log"
 	"math/rand"
 	"testing"

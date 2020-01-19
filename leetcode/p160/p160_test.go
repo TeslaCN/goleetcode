@@ -1,7 +1,7 @@
 package p160
 
 import (
-	"github.com/TeslaCN/goleetcode/p160/p160_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p160/p160_1"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"

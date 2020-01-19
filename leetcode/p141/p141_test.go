@@ -1,7 +1,7 @@
 package p141
 
 import (
-	"github.com/TeslaCN/goleetcode/p141/p141_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p141/p141_1"
 	"github.com/TeslaCN/goleetcode/util"
 	"testing"
 )

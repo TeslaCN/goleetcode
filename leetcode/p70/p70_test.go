@@ -1,8 +1,8 @@
 package p70
 
 import (
-	"github.com/TeslaCN/goleetcode/p70/p70_1"
-	"github.com/TeslaCN/goleetcode/p70/p70_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p70/p70_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p70/p70_2"
 	"testing"
 )
 
