@@ -1,8 +1,8 @@
-package p448
+package p448_find_all_numbers_disappeared_in_an_array
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p448/p448_1"
-	"github.com/TeslaCN/goleetcode/leetcode/p448/p448_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p448_find-all-numbers-disappeared-in-an-array/p448_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p448_find-all-numbers-disappeared-in-an-array/p448_2"
 	"reflect"
 	"testing"
 )

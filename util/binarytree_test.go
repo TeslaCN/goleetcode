@@ -50,3 +50,15 @@ func TestCreateTreeFromSequence(t *testing.T) {
 	tree := CreateTreeFromSequence(inputs)
 	t.Logf("DeepEqual: %v", reflect.DeepEqual(root, tree))
 }
+
+func TestPreorderTraversal(t *testing.T) {
+	PreorderTraversal(root)
+}
+
+func TestInorderTraversal(t *testing.T) {
+	InorderTraversal(root)
+}
+
+func TestPostorderTraversal(t *testing.T) {
+	PostorderTraversal(root)
+}

@@ -19,3 +19,17 @@ func FormatIntPointerSlice(slice []*int) string {
 	}
 	return strings.TrimSpace(s)
 }
+
+func ConvertToIntPointer(nums []int) []*int {
+	if nums == nil {
+		return nil
+	}
+	size := len(nums)
+	a := make([]*int, size)
+	for i := 0; i < size; i++ {
+		if nums[i] != 0 {
+			a[i] = &nums[i]
+		}
+	}
+	return a
+}

@@ -1,8 +1,8 @@
-package p121
+package p121_best_time_to_buy_and_sell_stock
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p121/p121_1"
-	"github.com/TeslaCN/goleetcode/leetcode/p121/p121_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p121_best-time-to-buy-and-sell-stock/p121_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p121_best-time-to-buy-and-sell-stock/p121_2"
 	"log"
 	"math/rand"
 	"testing"

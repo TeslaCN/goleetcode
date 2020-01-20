@@ -1,7 +1,7 @@
-package p160
+package p160_intersection_of_two_linked_lists
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p160/p160_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p160_intersection-of-two-linked-lists/p160_1"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"

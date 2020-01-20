@@ -1,8 +1,8 @@
-package p70
+package p70_climbing_stairs
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p70/p70_1"
-	"github.com/TeslaCN/goleetcode/leetcode/p70/p70_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p70_climbing-stairs/p70_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p70_climbing-stairs/p70_2"
 	"testing"
 )
 

@@ -1,9 +1,9 @@
-package p142
+package p142_linked_list_cycle_ii
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p142/p142_1"
-	"github.com/TeslaCN/goleetcode/leetcode/p142/p142_2"
-	"github.com/TeslaCN/goleetcode/leetcode/p142/p142_3"
+	"github.com/TeslaCN/goleetcode/leetcode/p142_linked-list-cycle-ii/p142_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p142_linked-list-cycle-ii/p142_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p142_linked-list-cycle-ii/p142_3"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"

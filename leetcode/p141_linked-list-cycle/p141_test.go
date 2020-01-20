@@ -1,7 +1,7 @@
-package p141
+package p141_linked_list_cycle
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p141/p141_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p141_linked-list-cycle/p141_1"
 	"github.com/TeslaCN/goleetcode/util"
 	"testing"
 )

@@ -1,8 +1,8 @@
-package p617
+package p617_merge_two_binary_trees
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p617/p617_1"
-	"github.com/TeslaCN/goleetcode/leetcode/p617/p617_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p617_merge-two-binary-trees/p617_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p617_merge-two-binary-trees/p617_2"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"

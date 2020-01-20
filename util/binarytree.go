@@ -1,5 +1,7 @@
 package util
 
+import "fmt"
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -57,4 +59,41 @@ func SequenceTraversalValues(root *TreeNode) []*int {
 		}
 	}
 	return values
+}
+
+func PreorderTraversal(root *TreeNode) {
+	pre(root)
+}
+
+func pre(node *TreeNode) {
+	if node == nil {
+		return
+	}
+	fmt.Printf("%v ", node.Val)
+	pre(node.Left)
+	pre(node.Right)
+}
+
+func InorderTraversal(root *TreeNode) {
+	inorder(root)
+}
+func inorder(node *TreeNode) {
+	if node == nil {
+		return
+	}
+	inorder(node.Left)
+	fmt.Printf("%v ", node.Val)
+	inorder(node.Right)
+}
+
+func PostorderTraversal(root *TreeNode) {
+	postorder(root)
+}
+func postorder(node *TreeNode) {
+	if node == nil {
+		return
+	}
+	postorder(node.Left)
+	postorder(node.Right)
+	fmt.Printf("%v ", node.Val)
 }
