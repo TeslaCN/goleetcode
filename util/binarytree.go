@@ -8,6 +8,10 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+func CreateTreeFromSequenceInt(values []int) *TreeNode {
+	return CreateTreeFromSequence(ConvertToIntPointer(values))
+}
+
 func CreateTreeFromSequence(values []*int) *TreeNode {
 	if values == nil || len(values) < 1 {
 		return nil
