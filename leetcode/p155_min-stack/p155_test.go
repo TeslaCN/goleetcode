@@ -16,6 +16,9 @@ func TestArray(t *testing.T) {
 
 func TestMinStack(t *testing.T) {
 	minStack := p155_1.Constructor()
+	for i := 0; i < 64; i++ {
+		minStack.Push(-i)
+	}
 	minStack.Push(-2)
 	minStack.Push(0)
 	minStack.Push(-3)

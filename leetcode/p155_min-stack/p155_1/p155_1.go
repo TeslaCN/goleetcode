@@ -18,10 +18,10 @@ func Constructor() MinStack {
 }
 
 func (s *MinStack) Push(x int) {
-	if s.cur == cap(s.a) {
+	if s.cur == len(s.a) {
 		s.a = append(s.a, 0)
 	}
-	if s.minCur == cap(s.min) {
+	if s.minCur == len(s.min) {
 		s.min = append(s.min, 0)
 	}
 	s.a[s.cur] = x
