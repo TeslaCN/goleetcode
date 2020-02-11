@@ -3,7 +3,7 @@ package p15_3sum
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p15_3sum/p15_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p15_3sum/p15_2"
-	"reflect"
+	"github.com/TeslaCN/goleetcode/util"
 	"testing"
 )
 
@@ -36,7 +36,7 @@ func Test_2(t *testing.T) {
 func testThreeSum(t *testing.T, f func([]int) [][]int) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := f(tt.args.nums); !reflect.DeepEqual(got, tt.want) {
+			if got := f(tt.args.nums); !util.EqualsIgnoreOrder(got, tt.want) {
 				if len(got) > 10 {
 					t.Errorf("threeSum() = %v... len = %v, want %v", got[:10], len(got), tt.want)
 				} else {
