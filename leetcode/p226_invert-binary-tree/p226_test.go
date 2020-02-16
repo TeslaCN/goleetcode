@@ -3,6 +3,7 @@ package p226_invert_binary_tree
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p226_invert-binary-tree/p226_1"
 	"github.com/TeslaCN/goleetcode/util"
+	"math"
 	"reflect"
 	"testing"
 )
@@ -32,8 +33,8 @@ func init() {
 		},
 		{
 			"case-0",
-			args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{4, 2, 7, 1, 0, 0, 9}))},
-			util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{4, 7, 2, 9, 0, 0, 1})),
+			args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{4, 2, 7, 1, math.MinInt32, math.MinInt32, 9}))},
+			util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{4, 7, 2, 9, math.MinInt32, math.MinInt32, 1})),
 		},
 	}...)
 }

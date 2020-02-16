@@ -3,6 +3,7 @@ package p104_maximum_depth_of_binary_tree
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p104_maximum-depth-of-binary-tree/p104_1"
 	"github.com/TeslaCN/goleetcode/util"
+	"math"
 	"testing"
 )
 
@@ -24,7 +25,7 @@ func init() {
 		args args
 		want int
 	}{
-		{"sample-0", args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{3, 9, 20, 0, 0, 15, 7}))}, 3},
+		{"sample-0", args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{3, 9, 20, math.MinInt32, math.MinInt32, 15, 7}))}, 3},
 		{"sample-1", args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{}))}, 0},
 	}...)
 }

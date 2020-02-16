@@ -1,7 +1,6 @@
 package p617_merge_two_binary_trees
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p617_merge-two-binary-trees/p617_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p617_merge-two-binary-trees/p617_2"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
@@ -102,9 +101,10 @@ func init() {
 	}...)
 }
 
-func Test_1(t *testing.T) {
-	testMergeTrees(t, p617_1.MergeTrees)
-}
+// Deprecated
+//func Test_1(t *testing.T) {
+//	testMergeTrees(t, p617_1.MergeTrees)
+//}
 
 func Test_2(t *testing.T) {
 	testMergeTrees(t, p617_2.MergeTrees)

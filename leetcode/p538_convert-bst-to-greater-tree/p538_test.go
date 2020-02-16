@@ -29,8 +29,10 @@ var tests = []struct {
 			  20     13
 		*/
 		name: "sample-0",
-		args: args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{5, 2, 13}))},
-		want: util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{18, 20, 13})),
+		//args: args{util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{5, 2, 13}))},
+		//want: util.CreateTreeFromSequence(util.ConvertToIntPointer([]int{18, 20, 13})),
+		args: args{util.MakeTreeFromString("[5,2,13]")},
+		want: util.MakeTreeFromString("[18,20,13]"),
 	},
 	{
 		/*
@@ -51,8 +53,10 @@ var tests = []struct {
 			 55             34    10
 		*/
 		name: "case-0",
-		args: args{util.CreateTreeFromSequenceInt([]int{5, 3, 8, 2, 4, 6, 9, 1, 0, 0, 0, 0, 7, 0, 10})},
-		want: util.CreateTreeFromSequenceInt([]int{45, 52, 27, 54, 49, 40, 19, 55, 0, 0, 0, 0, 34, 0, 10}),
+		//args: args{util.CreateTreeFromSequenceInt([]int{5, 3, 8, 2, 4, 6, 9, 1, 0, 0, 0, 0, 7, 0, 10})},
+		//want: util.CreateTreeFromSequenceInt([]int{45, 52, 27, 54, 49, 40, 19, 55, 0, 0, 0, 0, 34, 0, 10}),
+		args: args{util.MakeTreeFromString("[5, 3, 8, 2, 4, 6, 9, 1, null, null, null, null, 7, null, 10]")},
+		want: util.MakeTreeFromString("[45, 52, 27, 54, 49, 40, 19, 55, null, null, null, null, 34, null, 10]"),
 	},
 	{
 		/*
@@ -65,8 +69,10 @@ var tests = []struct {
 		   47   44   36   15
 		*/
 		name: "case-1",
-		args: args{util.CreateTreeFromSequenceInt([]int{5, 2, 13, 1, 3, 8, 15})},
-		want: util.CreateTreeFromSequenceInt([]int{41, 46, 28, 47, 44, 36, 15}),
+		//args: args{util.CreateTreeFromSequenceInt([]int{5, 2, 13, 1, 3, 8, 15})},
+		//want: util.CreateTreeFromSequenceInt([]int{41, 46, 28, 47, 44, 36, 15}),
+		args: args{util.MakeTreeFromString("[5, 2, 13, 1, 3, 8, 15]")},
+		want: util.MakeTreeFromString("[41, 46, 28, 47, 44, 36, 15]"),
 	},
 }
 

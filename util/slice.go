@@ -2,6 +2,7 @@ package util
 
 import (
 	"fmt"
+	"math"
 	"strings"
 )
 
@@ -27,7 +28,7 @@ func ConvertToIntPointer(nums []int) []*int {
 	size := len(nums)
 	a := make([]*int, size)
 	for i := 0; i < size; i++ {
-		if nums[i] != 0 {
+		if nums[i] != math.MinInt32 {
 			a[i] = &nums[i]
 		}
 	}
