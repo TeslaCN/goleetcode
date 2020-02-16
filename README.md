@@ -1,3 +1,3 @@
 # hello, world
 
-入门
+[![Go Report Card](https://goreportcard.com/badge/github.com/TeslaCN/goleetcode)](https://goreportcard.com/report/github.com/TeslaCN/goleetcode)
