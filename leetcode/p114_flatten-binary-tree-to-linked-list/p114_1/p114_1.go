@@ -6,6 +6,8 @@ type TreeNode = util.TreeNode
 
 var Flatten = flatten
 
+// Space: O(n)
+// Runtime: O(n)
 func flatten(root *TreeNode) {
 	var nodes []*TreeNode
 	preorder(root, func(node *TreeNode) {
