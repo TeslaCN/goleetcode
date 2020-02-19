@@ -8,6 +8,7 @@ var Flatten = flatten
 
 // Space: O(1)
 // Runtime: O(n)
+// Recursive
 func flatten(root *TreeNode) {
 	if root == nil {
 		return

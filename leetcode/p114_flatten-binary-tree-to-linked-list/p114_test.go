@@ -3,6 +3,7 @@ package p114_flatten_binary_tree_to_linked_list
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p114_flatten-binary-tree-to-linked-list/p114_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p114_flatten-binary-tree-to-linked-list/p114_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p114_flatten-binary-tree-to-linked-list/p114_3"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"
@@ -16,6 +17,10 @@ func Test_1(t *testing.T) {
 
 func Test_2(t *testing.T) {
 	testFlatten(t, p114_2.Flatten)
+}
+
+func Test_3(t *testing.T) {
+	testFlatten(t, p114_3.Flatten)
 }
 
 func testFlatten(t *testing.T, f func(*TreeNode)) {
