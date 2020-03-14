@@ -1,14 +1,13 @@
 package p322_coin_change
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p322_coin-change/p322_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p322_coin-change/p322_2"
 	"testing"
 )
 
-func Test_1(t *testing.T) {
-	testCoinChange(t, p322_1.CoinChange)
-}
+//func Test_1(t *testing.T) {
+//	testCoinChange(t, p322_1.CoinChange)
+//}
 
 func Test_2(t *testing.T) {
 	testCoinChange(t, p322_2.CoinChange)

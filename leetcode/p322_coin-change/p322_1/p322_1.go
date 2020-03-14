@@ -4,6 +4,7 @@ var CoinChange = coinChange
 
 var min map[int]int
 
+// Deprecated
 func coinChange(coins []int, amount int) int {
 	min = make(map[int]int)
 	return c(coins, amount)
