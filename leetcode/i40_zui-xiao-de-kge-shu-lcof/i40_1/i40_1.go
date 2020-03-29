@@ -5,6 +5,8 @@ import "sort"
 var GetLeastNumbers = getLeastNumbers
 
 func getLeastNumbers(arr []int, k int) []int {
-	sort.Ints(arr)
-	return arr[:k]
+	sort.Slice(arr, func(i, j int) bool {
+		return arr[i] > arr[j]
+	})
+	return arr[len(arr)-k:]
 }

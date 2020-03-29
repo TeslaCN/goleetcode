@@ -16,5 +16,5 @@ func TestMyStack(t *testing.T) {
 	t.Log(stack.Top() == 2)
 	stack.Pop()
 	stack.Pop()
-	stack.Pop()
+	//stack.Pop() // invalid
 }
