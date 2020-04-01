@@ -6,6 +6,7 @@ import (
 	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_golang"
 	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_heapsort"
 	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_insertsort"
+	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_mergesort"
 	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_quicksort"
 	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_quicksort_iter"
 	"github.com/TeslaCN/goleetcode/leetcode/p912_sort-an-array/p912_shellsort"
@@ -43,6 +44,10 @@ func Test_insertsort(t *testing.T) {
 
 func Test_shellsort(t *testing.T) {
 	testSortArray(t, p912_shellsort.SortArray)
+}
+
+func Test_mergesort(t *testing.T) {
+	testSortArray(t, p912_mergesort.SortArray)
 }
 
 func testSortArray(t *testing.T, f func([]int) []int) {
