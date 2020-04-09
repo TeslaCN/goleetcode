@@ -3,6 +3,7 @@ package p22_generate_parentheses
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p22_generate-parentheses/p22_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p22_generate-parentheses/p22_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p22_generate-parentheses/p22_3"
 	"reflect"
 	"sort"
 	"testing"
@@ -13,6 +14,10 @@ func Test_1(t *testing.T) {
 }
 func Test_2(t *testing.T) {
 	testGenerateParenthesis(t, p22_2.GenerateParenthesis)
+}
+
+func Test_3(t *testing.T) {
+	testGenerateParenthesis(t, p22_3.GenerateParenthesis)
 }
 func testGenerateParenthesis(t *testing.T, f func(int) []string) {
 	type args struct {
