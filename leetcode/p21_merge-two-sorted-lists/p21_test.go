@@ -2,6 +2,7 @@ package p21_merge_two_sorted_lists
 
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p21_merge-two-sorted-lists/p21_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p21_merge-two-sorted-lists/p21_2"
 	"github.com/TeslaCN/goleetcode/util"
 	"reflect"
 	"testing"
@@ -24,10 +25,18 @@ var tests = []struct {
 	{"case-1", args{util.CreateLinkedList([]int{1}), util.CreateLinkedList([]int{1})}, util.CreateLinkedList([]int{1, 1})},
 }
 
-func TestMergeTwoLists(t *testing.T) {
+func Test_1(t *testing.T) {
+	testMergeTwoLists(t, p21_1.MergeTwoLists)
+}
+
+func Test_2(t *testing.T) {
+	testMergeTwoLists(t, p21_2.MergeTwoLists)
+}
+
+func testMergeTwoLists(t *testing.T, f func(*ListNode, *ListNode) *ListNode) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := p21_1.MergeTwoLists(tt.args.l1, tt.args.l2); !reflect.DeepEqual(got, tt.want) {
+			if got := f(tt.args.l1, tt.args.l2); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("MergeTwoLists() = %v, want %v", got, tt.want)
 			}
 		})
