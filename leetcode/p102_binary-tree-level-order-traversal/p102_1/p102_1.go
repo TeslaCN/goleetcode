@@ -4,6 +4,8 @@ import "github.com/TeslaCN/goleetcode/util"
 
 type TreeNode = util.TreeNode
 
+var LevelOrder = levelOrder
+
 // Runtime: O(n)
 // Space: O(n)
 func levelOrder(root *TreeNode) [][]int {

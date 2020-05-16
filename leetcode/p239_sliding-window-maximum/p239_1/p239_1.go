@@ -1,11 +1,16 @@
 package p239_1
 
+var MaxSlidingWindow = maxSlidingWindow
+
 // 单调队列：
 // 大于最大值直接清空原队列
 // 小于最小值直接入列
 // 其余情况小于目标值的出列
 func maxSlidingWindow(nums []int, k int) []int {
 	n := len(nums)
+	if n == 0 || k == 0 {
+		return []int{}
+	}
 	maxValues, queue := make([]int, n-k+1), make([]int, 0, 1)
 	for i := 0; i < k && i < n; i++ {
 		queue = enqueue(queue, nums[i])
