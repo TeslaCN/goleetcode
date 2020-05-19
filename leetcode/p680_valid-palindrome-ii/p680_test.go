@@ -1,7 +1,7 @@
-package p660_valid_palindrome_ii
+package p680_valid_palindrome_ii
 
 import (
-	"github.com/TeslaCN/goleetcode/leetcode/p660_valid-palindrome-ii/p660_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p680_valid-palindrome-ii/p680_1"
 	"testing"
 )
 
@@ -33,7 +33,7 @@ var tests = []struct {
 func Test_validPalindrome(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := p660_1.ValidPalindrome(tt.args.s); got != tt.want {
+			if got := p680_1.ValidPalindrome(tt.args.s); got != tt.want {
 				t.Errorf("validPalindrome() = %v, want %v", got, tt.want)
 			}
 		})
