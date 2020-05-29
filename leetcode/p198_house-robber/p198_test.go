@@ -3,6 +3,7 @@ package p198_house_robber
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p198_house-robber/p198_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p198_house-robber/p198_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p198_house-robber/p198_3"
 	"testing"
 )
 
@@ -29,6 +30,10 @@ func Test_1(t *testing.T) {
 
 func Test_2(t *testing.T) {
 	testRob(t, p198_2.Rob)
+}
+
+func Test_3(t *testing.T) {
+	testRob(t, p198_3.Rob)
 }
 
 func testRob(t *testing.T, f func([]int) int) {
