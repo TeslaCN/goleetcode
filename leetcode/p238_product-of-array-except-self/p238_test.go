@@ -3,6 +3,7 @@ package p238_product_of_array_except_self
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p238_product-of-array-except-self/p238_0"
 	"github.com/TeslaCN/goleetcode/leetcode/p238_product-of-array-except-self/p238_1"
+	"github.com/TeslaCN/goleetcode/leetcode/p238_product-of-array-except-self/p238_2"
 	"reflect"
 	"testing"
 )
@@ -13,6 +14,10 @@ func Test_0(t *testing.T) {
 
 func Test_1(t *testing.T) {
 	testProductExceptSelf(t, p238_1.ProductExceptSelf)
+}
+
+func Test_2(t *testing.T) {
+	testProductExceptSelf(t, p238_2.ProductExceptSelf)
 }
 func testProductExceptSelf(t *testing.T, f func([]int) []int) {
 	type args struct {
