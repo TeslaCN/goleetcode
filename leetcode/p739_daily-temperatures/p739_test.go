@@ -3,6 +3,7 @@ package p739_daily_temperatures
 import (
 	"github.com/TeslaCN/goleetcode/leetcode/p739_daily-temperatures/p739_1"
 	"github.com/TeslaCN/goleetcode/leetcode/p739_daily-temperatures/p739_2"
+	"github.com/TeslaCN/goleetcode/leetcode/p739_daily-temperatures/p739_3"
 	"reflect"
 	"testing"
 )
@@ -13,6 +14,10 @@ func Test_1(t *testing.T) {
 
 func Test_2(t *testing.T) {
 	testDailyTemperatures(t, p739_2.DailyTemperatures)
+}
+
+func Test_3(t *testing.T) {
+	testDailyTemperatures(t, p739_3.DailyTemperatures)
 }
 
 func testDailyTemperatures(t *testing.T, f func([]int) []int) {

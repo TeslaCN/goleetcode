@@ -36,3 +36,30 @@ func EqualsIgnoreOrder(actual, expected [][]int) bool {
 	}
 	return true
 }
+
+func EqualsIgnoreOrderString(actual, expected [][]string) bool {
+	if len(actual) != len(expected) {
+		return false
+	}
+	less := func(i, j int) bool {
+		m, n := len(actual[i]), len(actual[j])
+		if m == 0 || n == 0 {
+			return n > 0
+		}
+		if m < n {
+			return true
+		} else if m > n {
+			return false
+		}
+		for a := 0; a < m; a++ {
+			if actual[i][a] != actual[j][a] {
+				return actual[i][a] < actual[j][a]
+			}
+		}
+		return true
+	}
+	sort.Slice(actual, less)
+	sort.Slice(expected, less)
+	//return reflect.DeepEqual(actual, expected)
+	panic("Unsupported")
+}
