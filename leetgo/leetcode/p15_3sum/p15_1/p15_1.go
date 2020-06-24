@@ -35,3 +35,8 @@ func threeSum(nums []int) [][]int {
 	}
 	return tuples
 }
+
+/*
+执行用时 : 440 ms , 在所有 Go 提交中击败了 12.17% 的用户
+内存消耗 : 7.3 MB , 在所有 Go 提交中击败了 66.67% 的用户
+*/

@@ -88,3 +88,8 @@ fabric.properties
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+*.class
+*.jar
+!gradle-wrapper.jar
+leetcodej/.gradle
+leetcodej/build
